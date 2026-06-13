@@ -65,7 +65,7 @@ async def start_handler(_, message: Message) -> None:
             "<b>│❍ ᴄʟɪᴄᴋ ʜᴇʟᴘ ғᴏʀ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs.</b>\n"
             "<b>├────────────────────▣</b>\n"
             f"<b>│❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ » "
-            f"<a href='https://t.me/PBXCHATS'>sʜɪᴢᴜ-ᴍᴜsɪᴄ™</a></b>\n"
+            f"<a href='https://t.me/NakaiStore'>Music</a></b>\n"
             "<b>╰────────────────────▣</b>"
         )
         kb = InlineKeyboardMarkup([
@@ -81,17 +81,17 @@ async def start_handler(_, message: Message) -> None:
                 InlineKeyboardButton("🫧 ᴏᴡɴᴇʀ 🫧",
                                      url=f"tg://user?id={config.OWNER_ID}"),
                 InlineKeyboardButton("🍡 sᴏᴜʀᴄᴇ 🍡",
-                                     url="https://github.com/Badmunda05/ShizuMusic/fork"),
+                                     url="https://github.com//"),
             ],
         ])
-
-        sent = await message.reply_animation(
-            animation,
-            caption=caption,
-            parse_mode=ParseMode.HTML,
-            reply_markup=kb,
-            message_effect_id=random.choice(EFFECT_ID),
-        )
+        
+        sent = await message.reply_photo(
+        photo=START_ANIMATIONS,
+        caption=caption,
+        parse_mode=ParseMode.HTML,
+        reply_markup=kb,
+        message_effect_id=random.choice(EFFECT_ID),
+    )
 
         try:
             add_broadcast_chat(chat_id, "private")
@@ -130,8 +130,8 @@ async def start_handler(_, message: Message) -> None:
                                   callback_data="show_help")],
         ])
 
-        sent = await message.reply_animation(
-            animation,
+        sent = await message.reply_photo(
+            photo=START_ANIMATIONS,
             caption=caption,
             parse_mode=ParseMode.HTML,
             reply_markup=kb,
@@ -210,7 +210,7 @@ async def help_handler(_, message: Message) -> None:
 
     animation = random.choice(START_ANIMATIONS)
 
-    sent = await message.reply_animation(
+    sent = await message.reply_photo(
         animation,
         caption=(
             "<b>╭────────────────────▣</b>\n"
