@@ -27,7 +27,7 @@ PORT             = int(os.getenv("PORT", 10000))
 
 #── Start ───────────────────────────────────────────────────────────────────────
 START_ANIMATIONS = [
-    "AgACAgUAAxkBAAJEVGospRcWGpLFfyRNX1bSh6yznubOAAICFWsbGgMRVXdh0QABjWWJQwAIAQADAgADeQAHHgQ"
+    "https://ibb.co.com/Gv1bCJs3"
 ]
 
 # ── Limits ────────────────────────────────────────────────────────────────────
