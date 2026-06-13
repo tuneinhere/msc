@@ -219,7 +219,7 @@ async def help_handler(_, message: Message) -> None:
             "<b>│📜 ᴄʜᴏᴏsᴇ ᴀ ᴄᴀᴛᴇɢᴏʀʏ :</b>\n"
             "<b>├────────────────────▣</b>\n"
             f"<b>│❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ » "
-            f"<a href='https://t.me/PBXCHATS'>sʜɪᴢᴜ-ᴍᴜsɪᴄ™</a></b>\n"
+            f"<a href='https://t.me/NakaiStore'>ᴍᴜsɪᴄ</a></b>\n"
             "<b>╰────────────────────▣</b>"
         ),
         parse_mode=ParseMode.HTML,
