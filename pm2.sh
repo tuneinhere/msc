@@ -52,7 +52,7 @@ pm2 delete "$SERVICE_NAME" 2>/dev/null
 pm2 start "$VENV_DIR/bin/python" \
     --name "$SERVICE_NAME" \
     --cwd "$INSTALL_DIR" \
-    -- -u -m FsubPremBot
+    -- -u -m ShizuMusic
 
 pm2 save
 pm2 startup
