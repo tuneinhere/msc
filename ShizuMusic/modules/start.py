@@ -86,7 +86,7 @@ async def start_handler(_, message: Message) -> None:
         ])
         
         sent = await message.reply_photo(
-        photo=START_ANIMATIONS,
+        photo=animation,
         caption=caption,
         parse_mode=ParseMode.HTML,
         reply_markup=kb,
@@ -131,7 +131,7 @@ async def start_handler(_, message: Message) -> None:
         ])
 
         sent = await message.reply_photo(
-            photo=START_ANIMATIONS,
+            photo=animation,
             caption=caption,
             parse_mode=ParseMode.HTML,
             reply_markup=kb,
